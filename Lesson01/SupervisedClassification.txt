@@ -1,0 +1,24 @@
+Supervised Classification.
+  Supervised: Someone is telling you how to do things.
+
+Basically, you create a program and you feed it a number of examples
+for the things that you are trying to classify. The program will look for
+common features and distinct features and try to classify accordingly.
+
+For instance, Supervised Classification for four-leged animals.
+
+DATA FED. (Animal, Y/N)
+Parrot   N
+Donkey   Y
+Horse    Y
+Giraffe  Y
+Goldfish N
+Wolf     Y
+Dog      Y
+Bee      N
+Ant      N
+Kangaroo N
+
+So, assuming that each animal has a distinct set of features, then you could
+ask the program to classify new animals and tell you if its a four-leged animal
+or not. 
