@@ -1,0 +1,58 @@
+BAYES RULE.
+
+
+
+SET-UP.
+  Given some characteristic/property/classification C.
+  Given some test T. Such that the test can be either POSITIVE or NEGATIVE.
+
+
+
+WHAT IS THE MAIN IDEA?
+Basically, you want to find two probabilities:
+  1. The probability of having some characteristic C if a test is positive.
+  2. The probability of NOT having some characteristic C if a test is positive.
+
+
+
+WHAT DATA DO YOU NEED TO START WITH?
+  A. The probability of having some characteristic for all the population in a sample.
+      P(C)
+  B. The probability of being tested positive AND having such characteristic.
+  This is called the sensitivity.
+      P(Pos|C)
+  C. The probability of being tested positive AND NOT having such characteristic.
+  This is called the specificity.
+      P(Pos|-C)
+
+
+
+SOME THEORY ON THE BACKGROUND.
+Bayes rule is essentially a procedure that goes from a PRIOR PROBABILITY to a
+POSTERIOR PROBABILITY after some EVIDENCE from a test:
+
+      PRIOR PROBABILITY * TEST EVIDENCE = POSTERIOR PROBABILITY.
+
+What is the Prior Probability?
+  The probability before running a test P(C).
+
+What is the Test Evidence?
+  The sensitivity P(Pos|C) and the specificity P(Pos|-C)
+
+What is the Posterior Probability?
+  The probability after running a test. P(C|Pos). (Note that you can find P(-C|Pos)
+  easily)
+
+
+ALGORITHM.
+  A. Start with P(C).
+  B. Find the joint of the probabilities P(Pos, C) and P(Pos, -C).
+    P(Pos, C)  = P(C)  * P(Pos|C)
+    P(Pos, -C) = P(-C) * P(Pos|-C)
+  C. Normalize the joint probabilities to find the conditional probabilities.
+    C.1. Find the sum of the joint probabilities.
+      P(Pos) = P(Pos, C) + P(Pos, -C)
+    C.2. Find the conditional probabilities.
+      P(Pos|C)  = P(Pos, C)  / P(Pos)
+      P(Pos|-C) = P(Pos, -C) / P(Pos)
+  QED. 
