@@ -1,0 +1,17 @@
+A DECISION SURFACE takes a scatter plot as a foundation, and
+creates a divisory line (not necessarily a straight line) that divides
+the plot into two categories. If a data point is said to lie on the surface
+A of the scatter plot then it is said to have characteristic X and thus belong
+to classification R. On the other hand, if the data point lies on the surface B,
+then it is said to have characteristic Y and thus belongs to classification S.
+Lastly, if the point lies on the divisory line or very close to this line,
+then it is said to be unclear on its characteristics and thus doesn't clearly
+belong to any of the classifications.
+
+Note this method is binary, dichotomous, and 2-dimensional; if you want to
+distinguish between more than two classifications, then several divisory lines
+would need to be included. If, on the other hand you want to distinguish between
+more than two features, then a n-dimensional plot would need to be used. It's
+important to notice that a computer doesn't actually plot the data and could
+figure n-dimensional stuff out, but for our human comprehension is easier to
+think in 2D. 
