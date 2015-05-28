@@ -1,1 +1,1 @@
-# LearningPython
+# Intro to Machine Learning
