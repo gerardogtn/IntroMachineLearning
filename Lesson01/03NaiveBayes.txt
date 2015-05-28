@@ -1,0 +1,25 @@
+NAIVE BAYES.
+
+Naive Bayes is an algorithm for creating simple (?) decision surfaces. In
+Python, there is a science kit (sklearn) that has an existing implementation
+of the Naive Bayes Algortihm, called GaussianNB. Obviously, for this to work
+you first need to import this functionality to your Python code, this can be
+done by adding the following line of code:
+
+from sklearn.naive_bayes import GaussianNB
+
+- ALGORITHM.
+1. Instantiate (?) a GaussianNB()
+2. Feed the data to the GaussianNB using GaussianNB.fit(X[], Y[])
+3. Ask the GaussianNB what classification is a data point using
+   GaussianNB.predict(X[], Y[])
+
+- ACCURACY
+Accuracy is a percent indicator of how well a Naive Bayes classification works
+on a set of data, it is simply defined by:
+
+accuracy = numOfPointsClassifiedCorrectly / totalNumOfPoints.
+
+Notice that 0 <= accuracy <= 1. (Makes sense because it's a percentage).
+
+You can also calculate the accuracy using GaussianNB.accuracy_score(X[], Y[], sampleWeight)
