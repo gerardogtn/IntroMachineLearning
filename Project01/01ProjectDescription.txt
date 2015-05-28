@@ -1,0 +1,10 @@
+Use Naive Bayes to perform text learning, and predict the author of some
+emails.
+
+There will be two possible authors:
+  - Chris.
+  - Sarah.
+
+You will have some text files and their respective authors.
+From that, callibrate the Naive Bayes algorithm.
+Then, given a text file predict which author wrote the file. 
