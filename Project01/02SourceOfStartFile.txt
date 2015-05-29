@@ -1,5 +1,0 @@
-The original file is found on the following link:
-
-https://github.com/udacity/ud120-projects/blob/master/naive_bayes/nb_author_id.py
-
-The starter file was created by Udacity's course Intro to Machine Learning. 
